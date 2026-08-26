@@ -1,0 +1,30 @@
+.control-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.message-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  .inline-message > span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+.spinner {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

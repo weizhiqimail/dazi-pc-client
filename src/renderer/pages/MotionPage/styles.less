@@ -1,0 +1,63 @@
+.task-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    strong,
+    span {
+      display: block;
+    }
+    div span {
+      color: var(--text-muted);
+      margin-top: 3px;
+      font-size: 0.9em;
+    }
+  }
+}
+.progress-track {
+  height: 5px;
+  background: var(--surface-pressed);
+  overflow: hidden;
+  span {
+    display: block;
+    height: 100%;
+    background: var(--accent);
+    transition: width 100ms linear;
+  }
+}
+.control-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.animated-list {
+  margin-bottom: 10px;
+  border: 1px solid var(--line);
+  > div {
+    height: 34px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 0 4px 0 9px;
+    border-bottom: 1px solid var(--line);
+    animation: list-in 140ms ease-out;
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+  span {
+    flex: 1;
+  }
+  svg:first-child {
+    color: #2f9e44;
+  }
+}
+@keyframes list-in {
+  from {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+}

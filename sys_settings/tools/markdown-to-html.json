@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "toolId": "markdown-to-html",
+  "completeHtmlDocument": false,
+  "openResultTabAfterConversion": "preview",
+  "defaultInputTab": "markdown",
+  "defaultCss": "",
+  "document": {
+    "language": "zh-CN",
+    "title": "Markdown Document",
+    "charset": "UTF-8",
+    "viewport": "width=device-width, initial-scale=1.0"
+  },
+  "output": {
+    "defaultFileName": "document.html",
+    "fileExtension": ".html"
+  }
+}

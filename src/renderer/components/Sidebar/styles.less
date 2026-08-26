@@ -1,0 +1,147 @@
+.sidebar {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--sidebar);
+  border-right: 1px solid var(--line);
+  overflow: hidden;
+  font-size: var(--nav-font-size);
+  &__top {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px;
+  }
+  &__footer {
+    padding: 8px 14px;
+    color: var(--text-muted);
+    font-size: 11px;
+  }
+}
+.search-trigger {
+  height: 30px;
+  min-width: 0;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 8px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--surface);
+  color: var(--text-muted);
+  cursor: pointer;
+  &:hover {
+    background: var(--surface-hover);
+    border-color: var(--line-strong);
+  }
+  span {
+    flex: 1;
+    text-align: left;
+    white-space: nowrap;
+  }
+}
+.nav-list {
+  flex: 1;
+  overflow: auto;
+  padding: 3px 6px;
+}
+.nav-group + .nav-group {
+  margin-top: 4px;
+}
+.nav-parent {
+  width: 100%;
+  height: var(--nav-height);
+  display: grid;
+  grid-template-columns: 18px 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 0 9px;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  text-align: left;
+  font-weight: 600;
+  cursor: pointer;
+  &:hover {
+    background: color-mix(in srgb, var(--surface) 65%, transparent);
+  }
+  > svg:last-child {
+    transition: transform 120ms ease;
+    transform: rotate(-90deg);
+    &.is-expanded {
+      transform: none;
+    }
+  }
+}
+.nav-children {
+  position: relative;
+  padding-left: 14px;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 3px;
+    bottom: 3px;
+    width: 1px;
+    background: var(--line);
+  }
+}
+.nav-item {
+  width: 100%;
+  height: var(--nav-height);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 0;
+  border-radius: 3px;
+  padding: 0 10px;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+  &:hover {
+    background: color-mix(in srgb, var(--surface) 65%, transparent);
+  }
+  &:active {
+    background: var(--surface-pressed);
+  }
+  &.is-active {
+    background: var(--surface);
+    font-weight: 600;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 8px;
+      bottom: 8px;
+      width: 3px;
+      border-radius: 2px;
+      background: var(--accent);
+    }
+  }
+}
+.sidebar-system {
+  flex: none;
+  padding: 3px 6px;
+  border-top: 1px solid var(--line);
+}
+.is-sidebar-collapsed {
+  .nav-item {
+    padding: 0;
+    justify-content: center;
+    span {
+      display: none;
+    }
+  }
+  .nav-parent {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    span,
+    > svg:last-child {
+      display: none;
+    }
+  }
+}

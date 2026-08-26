@@ -1,0 +1,25 @@
+.titlebar {
+  height: 36px;
+  border-bottom: 1px solid var(--line);
+  background: var(--canvas);
+  padding-right: 138px;
+  &__drag-region {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 12px;
+    app-region: drag;
+  }
+  &__title {
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+.app-mark {
+  width: 20px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+}

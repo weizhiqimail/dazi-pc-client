@@ -1,0 +1,25 @@
+.segmented {
+  width: fit-content;
+  display: inline-flex;
+  padding: 2px;
+  border: 1px solid var(--line);
+  background: var(--canvas);
+  border-radius: 3px;
+  button {
+    min-width: 62px;
+    height: calc(var(--control-height) - 4px);
+    padding: 0 10px;
+    border: 0;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+    &:hover {
+      background: var(--surface-hover);
+    }
+    &.is-selected {
+      background: var(--surface);
+      box-shadow: 0 0 0 1px var(--line);
+      font-weight: 600;
+    }
+  }
+}

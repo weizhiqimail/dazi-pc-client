@@ -1,0 +1,75 @@
+.tabs {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  border-bottom: 1px solid var(--line);
+  button {
+    height: 34px;
+    padding: 0 13px;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    cursor: pointer;
+    &:hover {
+      background: var(--surface-hover);
+    }
+    &[aria-selected='true'] {
+      border-bottom-color: var(--accent);
+      font-weight: 600;
+    }
+  }
+}
+.tab-panel {
+  min-height: 55px;
+  padding: 16px 4px 0;
+  color: var(--text-muted);
+}
+.list-toolbar {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text-muted);
+}
+.file-list {
+  border: 1px solid var(--line);
+}
+.file-row {
+  height: 34px;
+  display: grid;
+  grid-template-columns: auto minmax(120px, 1fr) 100px auto;
+  gap: 9px;
+  align-items: center;
+  padding: 0 4px 0 9px;
+  border-bottom: 1px solid var(--line);
+  cursor: default;
+  &:last-child {
+    border-bottom: 0;
+  }
+  &:hover {
+    background: var(--surface-hover);
+  }
+  &.is-selected {
+    background: color-mix(in srgb, var(--accent) 14%, var(--surface));
+    box-shadow: inset 3px 0 var(--accent);
+  }
+  &__name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &__meta {
+    color: var(--text-muted);
+    font-size: 0.9em;
+  }
+  .icon-button {
+    width: 26px;
+    height: 26px;
+    opacity: 0;
+  }
+  &:hover .icon-button,
+  &.is-selected .icon-button,
+  .icon-button:focus {
+    opacity: 1;
+  }
+}

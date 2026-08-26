@@ -1,0 +1,23 @@
+.icon-button {
+  width: var(--control-height);
+  height: var(--control-height);
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  background: transparent;
+  cursor: pointer;
+  &:hover:not(:disabled) {
+    background: var(--surface-hover);
+    border-color: var(--line);
+  }
+  &:active:not(:disabled) {
+    background: var(--surface-pressed);
+  }
+  &:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+  }
+}

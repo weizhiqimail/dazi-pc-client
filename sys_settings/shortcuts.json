@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "shortcuts": {
+    "openCommandPalette": "CommandOrControl+K",
+    "openSettings": "CommandOrControl+,",
+    "closeCurrentView": "CommandOrControl+W",
+    "runPrimaryAction": "CommandOrControl+Enter"
+  }
+}

@@ -1,0 +1,27 @@
+# 应用在 Windows 中使用的稳定标识，发布后不要随意修改。
+appId: com.dazi.toolkit
+productName: Dazi Toolkit
+
+directories:
+  # 将安装器与 Forge 的应用目录分开放置。
+  output: out/installers
+
+artifactName: '${productName}-${version}-${arch}-Setup.${ext}'
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+
+nsis:
+  # 使用传统分步安装向导，而不是双击后直接静默安装。
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  perMachine: false
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Dazi Toolkit
+  runAfterFinish: true
+  # 卸载程序时保留用户配置和缓存，避免误删个人数据。
+  deleteAppDataOnUninstall: false
