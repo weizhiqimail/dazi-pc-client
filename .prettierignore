@@ -1,7 +1,0 @@
-node_modules/
-.vite/
-out/
-coverage/
-.idea/
-package-lock.json
-LICENSE

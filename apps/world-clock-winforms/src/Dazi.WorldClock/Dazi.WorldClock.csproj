@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>Dazi.WorldClock</AssemblyName>
+    <RootNamespace>Dazi.WorldClock</RootNamespace>
+    <ApplicationIcon>Assets\world-clock.ico</ApplicationIcon>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dazi.WorldClock.Core\Dazi.WorldClock.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\world-clock.png" />
+  </ItemGroup>
+</Project>

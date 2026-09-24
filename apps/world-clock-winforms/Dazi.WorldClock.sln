@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dazi.WorldClock.Core", "src\Dazi.WorldClock.Core\Dazi.WorldClock.Core.csproj", "{C11E076A-3B5B-4F28-9E7D-921447D43BF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dazi.WorldClock", "src\Dazi.WorldClock\Dazi.WorldClock.csproj", "{9148FD02-E434-4337-860F-940BD645CF45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dazi.WorldClock.Tests", "tests\Dazi.WorldClock.Tests\Dazi.WorldClock.Tests.csproj", "{F79641A5-4F0C-4287-A8A3-C74C6D761BB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C11E076A-3B5B-4F28-9E7D-921447D43BF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C11E076A-3B5B-4F28-9E7D-921447D43BF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C11E076A-3B5B-4F28-9E7D-921447D43BF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C11E076A-3B5B-4F28-9E7D-921447D43BF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9148FD02-E434-4337-860F-940BD645CF45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9148FD02-E434-4337-860F-940BD645CF45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9148FD02-E434-4337-860F-940BD645CF45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9148FD02-E434-4337-860F-940BD645CF45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F79641A5-4F0C-4287-A8A3-C74C6D761BB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F79641A5-4F0C-4287-A8A3-C74C6D761BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F79641A5-4F0C-4287-A8A3-C74C6D761BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F79641A5-4F0C-4287-A8A3-C74C6D761BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
